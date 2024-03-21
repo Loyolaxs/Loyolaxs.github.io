@@ -7,17 +7,16 @@ function calcularDescuentos() {
         return;
     }
 
-    var descuentoVidrioAncho = (ancho / 2) - 9.5; // Fórmula para el descuento del vidrio ancho
-    var descuentoHojaAncho = (ancho / 2) - 8.5; // Fórmula para el descuento de la hoja ancho
+    var descuentoHojaAncho = (ancho / 2) - 9.5; // Fórmula para el descuento de la hoja ancho
+    var descuentoVidrioAncho = (ancho / 2) - 8.5; // Fórmula para el descuento del vidrio ancho
     var descuentoHojaAlto = alto - 6.5; // Fórmula para el descuento de la hoja alto
     var descuentoVidrioAlto = alto - 14.5; // Fórmula para el descuento del vidrio alto
 
     var resultado = "Descuentos:<br>";
-    resultado += "Descuento vidrio ancho: " + descuentoVidrioAncho + " cm<br>";
-    resultado += "Descuento hoja ancho: " + descuentoHojaAncho + " cm<br>";
-    resultado += "Descuento hoja alto: " + descuentoHojaAlto + " cm<br>";
-    resultado += "Descuento vidrio alto: " + descuentoVidrioAlto + " cm<br>";
+    resultado += "Hoja Ancho: " + descuentoHojaAncho + " cm<br>";
+    resultado += "Vidrio Ancho: " + descuentoVidrioAncho + " cm<br>";
+    resultado += "Hoja Alto: " + descuentoHojaAlto + " cm<br>";
+    resultado += "Vidrio Alto: " + descuentoVidrioAlto + " cm<br>";
 
     document.getElementById("resultado").innerHTML = resultado;
 }
-
